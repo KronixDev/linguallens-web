@@ -30,7 +30,7 @@ export default function MultilingualSlogan() {
   }, []);
   
   return (
-    <div className="h-24 flex items-center justify-center overflow-hidden py-8 w-full px-4">
+    <div className="h-24 flex items-center justify-center overflow-hidden py-8 w-full px-6 md:px-8">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -51,9 +51,9 @@ export default function MultilingualSlogan() {
               filter: { duration: 1, ease: [0.55, 0, 0.1, 1] }
             }
           }}
-          className="flex flex-col items-center w-full"
+          className="flex flex-col items-center w-full max-w-[90%] mx-auto"
         >
-          <p className="text-xl md:text-2xl font-extralight text-center text-[#e8e8e6] tracking-wider w-full">
+          <p className="text-xl md:text-2xl font-extralight text-center text-[#e8e8e6] tracking-wider w-full break-words">
             {slogans[currentIndex].text}
           </p>
           <div className="h-[1px] w-16 bg-[#e8e8e6]/20 mt-3"></div>
