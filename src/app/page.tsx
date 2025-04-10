@@ -22,7 +22,7 @@ export default function Home() {
       </div>
       
       {/* Contenu central */}
-      <div className="z-10 flex flex-col items-center justify-center space-y-6">
+      <div className="z-10 flex flex-col items-center justify-center w-full max-w-4xl mx-auto px-6 sm:px-10 py-10">
         {/* Logo */}
         <div className="relative w-72 h-72 mb-2">
           <Image
@@ -39,9 +39,11 @@ export default function Home() {
         <MultilingualSlogan />
         
         {/* Texte */}
-        <p className="text-xl font-extralight text-center text-[#e8e8e6] mt-8 mb-6 tracking-wide">
-          Traduisez instantanément le monde qui vous entoure
-        </p>
+        <div className="w-full max-w-sm mx-auto">
+          <p className="text-xl font-extralight text-center text-[#e8e8e6] mt-8 mb-8 tracking-wide leading-relaxed">
+            Instantly translate the world around you
+          </p>
+        </div>
         
         {/* Bouton App Store */}
         <AppStoreDownloadButton />
