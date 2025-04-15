@@ -1,0 +1,91 @@
+{
+  "terms": {
+    "title": "Terms of Use",
+    "lastUpdated": "Last updated: April 15, 2025",
+    "intro": "Welcome to LinguaLens. By using our application, you agree to these Terms of Use. Please read them carefully.",
+    "sections": [
+      {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing or using LinguaLens, you agree to be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any part of these terms, you may not use our services."
+      },
+      {
+        "title": "2. Use of the Service",
+        "content": "LinguaLens provides an AI-powered translation tool. You agree to use the service only for lawful purposes and in accordance with these Terms. You may not use the service in any way that could damage, disable, or impair the service."
+      },
+      {
+        "title": "3. User Accounts",
+        "content": "When you create an account with us, you must provide accurate information. You are responsible for maintaining the security of your account and password. LinguaLens cannot and will not be liable for any loss or damage from your failure to comply with this security obligation."
+      },
+      {
+        "title": "4. Content and Copyright",
+        "content": "Any content you upload or translate using our service remains your property. However, by using our service, you grant us a license to use, modify, and store this content solely for the purpose of providing our translation services."
+      },
+      {
+        "title": "5. Subscription and Payments",
+        "content": "Some features of LinguaLens require a paid subscription. Payment terms will be specified at the time of purchase. We reserve the right to change our prices with reasonable notice."
+      },
+      {
+        "title": "6. Limitations of Liability",
+        "content": "LinguaLens is provided 'as is' without any warranties. We do not guarantee the accuracy of translations. In no event shall LinguaLens, its operators, or affiliates be liable for any direct, indirect, incidental, special, or consequential damages."
+      },
+      {
+        "title": "7. Changes to Terms",
+        "content": "We reserve the right to modify these Terms at any time. We will provide notice of significant changes by updating the date at the top of these Terms and by maintaining a current version on our website."
+      },
+      {
+        "title": "8. Governing Law",
+        "content": "These Terms shall be governed by the laws of France, without regard to its conflict of law provisions."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: April 15, 2025",
+    "intro": "At LinguaLens, we take your privacy seriously. This Privacy Policy explains what information we collect, how we use it, and what choices you have regarding your data.",
+    "sections": [
+      {
+        "title": "Data Collection",
+        "content": "LinguaLens collects only the data necessary for the functioning of the application: images/texts translated (not stored after processing, unless explicitly saved by you), email address for user accounts, language preferences and application settings, and information about transactions and subscriptions (via Apple/Google)."
+      },
+      {
+        "title": "Data Usage",
+        "content": "Your data is used exclusively to: provide and improve translation services, manage your account and preferences, process transactions and subscriptions, contact you if necessary for support, and ensure application security."
+      },
+      {
+        "title": "Third-Party Sharing",
+        "content": "LinguaLens uses third-party services to function: Supabase for authentication and storage, AWS for secure image processing, Apple App Store / Google Play for payments. These services only have access to the data strictly necessary for their function. No personal data is sold or shared for commercial or advertising purposes."
+      },
+      {
+        "title": "Your Rights (GDPR)",
+        "content": "In accordance with the General Data Protection Regulation (GDPR), you can: access your personal data, correct your information, request deletion of your data, limit or object to processing, request data portability, withdraw your consent at any time."
+      },
+      {
+        "title": "Security",
+        "content": "LinguaLens implements appropriate technical and organizational measures to protect your data against unauthorized access, use, disclosure, alteration or destruction. We use industry-standard encryption protocols for all communications with our servers."
+      },
+      {
+        "title": "Policy Changes",
+        "content": "We reserve the right to modify this policy at any time. Substantial changes will be notified via the application. By continuing to use LinguaLens after such changes, you accept the revised policy."
+      }
+    ],
+    "legalInfo": {
+      "title": "Legal Information",
+      "intro": "LinguaLens is published by:",
+      "company": "KRONIX SAS, société par actions simplifiée",
+      "siren": "SIREN: 984 049 478",
+      "siret": "SIRET: 984 049 478 00014",
+      "vat": "VAT Number: FR06984049478",
+      "address": "Address: 60 RUE FRANCOIS IER, 75008 PARIS",
+      "rcs": "RCS: PARIS (01/02/2024)"
+    }
+  },
+  "common": {
+    "languageSelector": "Select language",
+    "home": "Home",
+    "termsLink": "Terms of Use",
+    "privacyLink": "Privacy Policy",
+    "footer": {
+      "copyright": "LinguaLens © {year} KRONIX SAS"
+    }
+  }
+}

@@ -1,9 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getDictionary } from '@/i18n/getDictionary';
 import MultilingualSlogan from "@/components/MultilingualSlogan";
 import AppStoreDownloadButton from "@/components/AppStoreDownloadButton";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { defaultLocale } from '@/i18n/config';
 
-export default function Home() {
+export default async function Home({ params }: { params: { lang: string } }) {
+  const { lang } = await params;
+  const locale = lang || defaultLocale;
+  const dict = await getDictionary(locale);
+  
+  const { common } = dict;
+  const currentYear = new Date().getFullYear();
+  
   return (
     <div className="relative flex flex-col items-center justify-between min-h-screen overflow-hidden bg-[#121212]">
       {/* Quadrillage géométrique */}
@@ -20,6 +30,11 @@ export default function Home() {
         <div className="absolute w-[20%] h-[20%] left-[40%] top-[10%] border border-[#848484]"></div>
         <div className="absolute w-[30%] h-[30%] right-[10%] top-[40%] border border-[#848484]"></div>
         <div className="absolute w-[15%] h-[15%] left-[10%] bottom-[20%] border border-[#848484]"></div>
+      </div>
+      
+      {/* Language selector */}
+      <div className="relative z-10 flex justify-end w-full px-8 pt-6">
+        <LanguageSwitcher />
       </div>
       
       {/* Contenu central */}
@@ -54,14 +69,14 @@ export default function Home() {
       <footer className="w-full z-10 border-t border-[#333333] py-6 px-8 mt-auto">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="text-[#767676] mb-4 sm:mb-0">
-            LinguaLens © {new Date().getFullYear()} Kronix
+            {common.footer.copyright.replace('{year}', currentYear)}
           </div>
           <div className="flex space-x-8">
-            <Link href="/terms" className="text-[#767676] hover:text-[#a0a0a0] transition-colors text-sm">
-              Conditions d'utilisation
+            <Link href={`/${locale}/terms`} className="text-[#767676] hover:text-[#a0a0a0] transition-colors text-sm">
+              {common.termsLink}
             </Link>
-            <Link href="/privacy" className="text-[#767676] hover:text-[#a0a0a0] transition-colors text-sm">
-              Politique de confidentialité
+            <Link href={`/${locale}/privacy`} className="text-[#767676] hover:text-[#a0a0a0] transition-colors text-sm">
+              {common.privacyLink}
             </Link>
           </div>
         </div>

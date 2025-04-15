@@ -1,0 +1,91 @@
+{
+  "terms": {
+    "title": "Conditions d'Utilisation",
+    "lastUpdated": "Dernière mise à jour : 15 avril 2025",
+    "intro": "Bienvenue sur LinguaLens. En utilisant notre application, vous acceptez ces Conditions d'Utilisation. Veuillez les lire attentivement.",
+    "sections": [
+      {
+        "title": "1. Acceptation des Conditions",
+        "content": "En accédant ou en utilisant LinguaLens, vous acceptez d'être lié par ces Conditions d'Utilisation et toutes les lois et réglementations applicables. Si vous n'êtes pas d'accord avec une partie de ces conditions, vous ne pouvez pas utiliser nos services."
+      },
+      {
+        "title": "2. Utilisation du Service",
+        "content": "LinguaLens fournit un outil de traduction alimenté par l'IA. Vous acceptez d'utiliser le service uniquement à des fins légales et conformément à ces Conditions. Vous ne pouvez pas utiliser le service d'une manière qui pourrait endommager, désactiver ou altérer le service."
+      },
+      {
+        "title": "3. Comptes Utilisateurs",
+        "content": "Lorsque vous créez un compte chez nous, vous devez fournir des informations exactes. Vous êtes responsable du maintien de la sécurité de votre compte et de votre mot de passe. LinguaLens ne peut être tenu responsable des pertes ou dommages résultant de votre non-respect de cette obligation de sécurité."
+      },
+      {
+        "title": "4. Contenu et Droits d'Auteur",
+        "content": "Tout contenu que vous téléchargez ou traduisez à l'aide de notre service reste votre propriété. Cependant, en utilisant notre service, vous nous accordez une licence pour utiliser, modifier et stocker ce contenu uniquement dans le but de fournir nos services de traduction."
+      },
+      {
+        "title": "5. Abonnement et Paiements",
+        "content": "Certaines fonctionnalités de LinguaLens nécessitent un abonnement payant. Les conditions de paiement seront spécifiées au moment de l'achat. Nous nous réservons le droit de modifier nos tarifs avec un préavis raisonnable."
+      },
+      {
+        "title": "6. Limitations de Responsabilité",
+        "content": "LinguaLens est fourni 'tel quel' sans aucune garantie. Nous ne garantissons pas l'exactitude des traductions. En aucun cas, LinguaLens, ses opérateurs ou affiliés ne pourront être tenus responsables de dommages directs, indirects, accessoires, spéciaux ou consécutifs."
+      },
+      {
+        "title": "7. Modifications des Conditions",
+        "content": "Nous nous réservons le droit de modifier ces Conditions à tout moment. Nous informerons les utilisateurs des changements significatifs en mettant à jour la date en haut de ces Conditions et en maintenant une version actuelle sur notre site web."
+      },
+      {
+        "title": "8. Loi Applicable",
+        "content": "Ces Conditions sont régies par les lois de la France, sans égard à ses dispositions en matière de conflit de lois."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour : 15 avril 2025",
+    "intro": "Chez LinguaLens, nous prenons votre confidentialité au sérieux. Cette Politique de Confidentialité explique quelles informations nous collectons, comment nous les utilisons et quels choix vous avez concernant vos données.",
+    "sections": [
+      {
+        "title": "Collecte des Données",
+        "content": "LinguaLens collecte uniquement les données nécessaires au fonctionnement de l'application : images/textes traduits (non stockés après traitement, sauf si explicitement enregistrés par vous), adresse email pour les comptes utilisateurs, préférences linguistiques et paramètres de l'application, et informations sur les transactions et abonnements (via Apple/Google)."
+      },
+      {
+        "title": "Utilisation des Données",
+        "content": "Vos données sont utilisées exclusivement pour : fournir et améliorer les services de traduction, gérer votre compte et vos préférences, traiter les transactions et abonnements, vous contacter si nécessaire pour le support, et assurer la sécurité de l'application."
+      },
+      {
+        "title": "Partage avec des Tiers",
+        "content": "LinguaLens utilise des services tiers pour fonctionner : Supabase pour l'authentification et le stockage, AWS pour le traitement sécurisé des images, Apple App Store / Google Play pour les paiements. Ces services n'ont accès qu'aux données strictement nécessaires à leur fonction. Aucune donnée personnelle n'est vendue ou partagée à des fins commerciales ou publicitaires."
+      },
+      {
+        "title": "Vos Droits (RGPD)",
+        "content": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous pouvez : accéder à vos données personnelles, rectifier vos informations, demander la suppression de vos données, limiter ou vous opposer au traitement, demander la portabilité de vos données, retirer votre consentement à tout moment."
+      },
+      {
+        "title": "Sécurité",
+        "content": "LinguaLens met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès, utilisation, divulgation, altération ou destruction non autorisés. Nous utilisons des protocoles de chiffrement standard de l'industrie pour toutes les communications avec nos serveurs."
+      },
+      {
+        "title": "Modifications de la Politique",
+        "content": "Nous nous réservons le droit de modifier cette politique à tout moment. Les modifications substantielles seront notifiées via l'application. En continuant à utiliser LinguaLens après de telles modifications, vous acceptez la politique révisée."
+      }
+    ],
+    "legalInfo": {
+      "title": "Informations Légales",
+      "intro": "LinguaLens est édité par :",
+      "company": "KRONIX SAS, société par actions simplifiée",
+      "siren": "SIREN : 984 049 478",
+      "siret": "SIRET : 984 049 478 00014",
+      "vat": "N° TVA : FR06984049478",
+      "address": "Adresse : 60 RUE FRANCOIS IER, 75008 PARIS",
+      "rcs": "RCS : PARIS (01/02/2024)"
+    }
+  },
+  "common": {
+    "languageSelector": "Sélectionner la langue",
+    "home": "Accueil",
+    "termsLink": "Conditions d'Utilisation",
+    "privacyLink": "Politique de Confidentialité",
+    "footer": {
+      "copyright": "LinguaLens © {year} KRONIX SAS"
+    }
+  }
+}
