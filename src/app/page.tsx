@@ -33,6 +33,7 @@ export default function Home() {
             className="object-contain"
             style={{ filter: 'brightness(1.5) saturate(0.1) contrast(1.2)' }}
             priority
+            unoptimized
           />
         </div>
         
@@ -57,10 +58,10 @@ export default function Home() {
             LinguaLens © {new Date().getFullYear()} Kronix
           </div>
           <div className="flex space-x-8">
-            <Link href="/terms" className="text-[#767676] hover:text-[#a0a0a0] transition-colors text-sm">
+            <Link href="/en/terms" className="text-[#767676] hover:text-[#a0a0a0] transition-colors text-sm">
               Conditions d'utilisation
             </Link>
-            <Link href="/privacy" className="text-[#767676] hover:text-[#a0a0a0] transition-colors text-sm">
+            <Link href="/en/privacy" className="text-[#767676] hover:text-[#a0a0a0] transition-colors text-sm">
               Politique de confidentialité
             </Link>
           </div>

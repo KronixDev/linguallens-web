@@ -5,12 +5,17 @@ export function middleware(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const pathname = request.nextUrl.pathname;
   
+  // Ne pas rediriger la page d'accueil
+  if (pathname === '/' || pathname === '') {
+    return NextResponse.next();
+  }
+  
   // Check if the pathname is missing a locale
   const pathnameIsMissingLocale = locales.every(
     ({ code }) => !pathname.startsWith(`/${code}/`) && pathname !== `/${code}`
   );
   
-  // If the pathname is missing a locale, redirect to the default locale
+  // Si c'est une page qui nécessite l'internationalisation et qu'il manque la locale
   if (pathnameIsMissingLocale) {
     const locale = defaultLocale;
     
@@ -24,6 +29,6 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Matcher ignoring `/_next/` and `/api/`
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)']
+  // Matcher excluding /_next/, /api/, and specifically including paths that need i18n
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)', '/terms', '/privacy']
 };

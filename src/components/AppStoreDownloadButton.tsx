@@ -30,7 +30,7 @@ export default function AppStoreDownloadButton() {
         fill
         className="object-contain"
         priority
-        unoptimized // Désactive l'optimisation d'image pour éviter les problèmes avec les routes dynamiques
+        unoptimized={true}
       />
     </motion.a>
   );
