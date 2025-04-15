@@ -13,13 +13,15 @@ const nextConfig = {
       },
     ],
   },
-  // Gestion des actifs statiques
-  output: 'standalone', // Optimisation pour les déploiements
-  // Gestion avancée des chemins d'accès
-  experimental: {
-    // Pour résoudre les problèmes avec les redirections infinies
-    skipTrailingSlashRedirect: true,
-  },
+  // Optimisation pour les déploiements
+  output: 'standalone',
+  
+  // Pour résoudre les problèmes avec les redirections infinies
+  skipTrailingSlashRedirect: true,
+  
+  // Désactiver la redirection automatique vers l'index
+  trailingSlash: true,
+  
   typescript: {
     // !! WARN !!
     // Ignorer les erreurs de typage causées par un problème connu de Next.js 15
