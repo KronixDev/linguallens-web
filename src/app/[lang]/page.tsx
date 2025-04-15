@@ -48,6 +48,7 @@ export default async function Home({ params }: { params: { lang: string } }) {
             className="object-contain"
             style={{ filter: 'brightness(1.5) saturate(0.1) contrast(1.2)' }}
             priority
+            unoptimized
           />
         </div>
         

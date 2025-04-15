@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Configuration des images
   images: {
+    // Désactive l'optimisation des images par défaut pour éviter les problèmes avec i18n
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -9,6 +12,13 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
+  },
+  // Gestion des actifs statiques
+  output: 'standalone', // Optimisation pour les déploiements
+  // Gestion avancée des chemins d'accès
+  experimental: {
+    // Pour résoudre les problèmes avec les redirections infinies
+    skipTrailingSlashRedirect: true,
   },
   typescript: {
     // !! WARN !!
