@@ -1,62 +1,58 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 interface ObfuscatedEmailProps {
   className?: string;
 }
 
-const ObfuscatedEmail: React.FC<ObfuscatedEmailProps> = ({ className }) => {
+const ObfuscatedEmail = ({ className }: ObfuscatedEmailProps) => {
   const [revealed, setRevealed] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  
-  // Ensure we're running on client side
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const [isClient, setIsClient] = useState(false);
   
   // Email parts obfuscated to prevent scraping
-  const parts = ['ke', 'vin', '@', 'kro', 'nix', '.io'];
+  const emailParts = ['ke', 'vin', '@', 'kro', 'nix', '.io'];
+  const email = emailParts.join('');
   
-  // Only build the actual email when user clicks to reveal
+  // Détection côté client
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+  
+  // Gérer le clic sur le bouton
   const handleReveal = (e: React.MouseEvent) => {
     e.preventDefault();
     setRevealed(true);
   };
   
-  // If not mounted yet (server-side), show a static button
-  if (!mounted) {
-    return (
-      <button 
-        className={className}
-        aria-label="Afficher l'adresse email"
-        disabled
-      >
-        [Cliquer pour afficher l'email]
-      </button>
-    );
+  // Si nous ne sommes pas encore côté client, renderiser seulement le texte
+  if (!isClient) {
+    return <span className={className}>[Cliquer pour afficher l'email]</span>;
   }
   
   if (revealed) {
     return (
-      <a 
-        href={`mailto:${parts.join('')}`} 
+      <a
+        href={`mailto:${email}`}
         className={className}
         onClick={(e) => e.stopPropagation()}
       >
-        {parts.join('')}
+        {email}
       </a>
     );
   }
   
   return (
-    <button 
-      onClick={handleReveal}
-      className={className}
-      aria-label="Afficher l'adresse email"
-    >
-      [Cliquer pour afficher l'email]
-    </button>
+    <span>
+      <button
+        onClick={handleReveal}
+        className={className}
+        type="button"
+        aria-label="Afficher l'adresse email"
+      >
+        [Cliquer pour afficher l'email]
+      </button>
+    </span>
   );
 };
 
